@@ -203,7 +203,8 @@ export default {
             // 找到表单对象,调用validate方法
             this.$refs.loginForm.validate(v => {
                 if(v){
-                    alert('全部通过')                  
+                    alert('全部通过')  
+                    this.$router.push('/invite')                
                 }
             })
         },
